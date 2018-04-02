@@ -1,0 +1,10 @@
+br\com\pv\GitHubPattern.class
+br\com\pv\GitHubSearchEngine.class
+br\com\pv\CompileRegex.class
+br\com\pv\GitHubRepository.class
+br\com\pv\GitHubCloneUrl.class
+br\com\pv\GitHubService.class
+br\com\pv\GitHubHome.class
+br\com\pv\GitHub.class
+br\com\pv\IGitHubSearchEngine.class
+br\com\pv\ICompileRegex.class
