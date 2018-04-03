@@ -90,10 +90,10 @@ public final class GitHubSearchEngine implements IGitHubSearchEngine {
 				GitHubRepository gitHubRepository = new GitHubRepository();
 
 				gitHubRepository.setUrl("https://github.com"
-						+ this.matcher.group(0));
+						+ this.matcher.group(1));
 
-				gitHubRepository.setTitle(this.matcher.group(1));
-
+				gitHubRepository.setTitle(this.matcher.group(2));
+				System.out.println(this.matcher.group(2));
 				gitHubRepository.setZip(new GitHubSearchEngine(this.regex)
 						.downloadZipFile(new DefaultHttpClient(), new HttpGet(
 								"https://github.com" + this.matcher.group(1)),

@@ -16,7 +16,7 @@ public class GitHubPattern implements Serializable {
 			"<img\\sclass=\"avatar(.*?)\"[^>]*?\\ssrc=\"(.*?)\" width=\"(.*?)\" height=\"(.*?)\">";
 	// Expressao usada para recuperar lista de repositorios.
 
-	public static final String REPOSITORIES_LIST = "<h3>[^>]*?<\\s*a\\s+[^>]*href\\s*=\\s*[\"']?([^\"' >]+)[\"' >]";
+	public static final String REPOSITORIES_LIST = "<h3>[^>]*?<a\\shref=\"(.*?)\"\\sitemprop=\"[^>]*?\">([^>]*?)<\\/a>[^>]*?<\\/h3>";
 	// Expressao usada para recuperar arquivo zip para download.
 
 	public static final String DOWNLOAD_ZIP ="<a\\shref=\"(.*?)\"[^>]*?>[^>]*?</a>";
